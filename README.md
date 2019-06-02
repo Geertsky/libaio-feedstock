@@ -3,7 +3,7 @@ About libaio
 
 Home: https://pagure.io/libaio
 
-Package license: LGPL-2.1
+Package license: LGPL-2.1 
 
 Feedstock license: BSD 3-Clause
 
