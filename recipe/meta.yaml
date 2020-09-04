@@ -26,7 +26,7 @@ test:
 
 about:
   home: https://pagure.io/libaio
-  license: LGPL-2.1
+  license: LGPL-2.1-only
   license_family: LGPL
   license_file: COPYING
   summary: 'Provides the Linux-native API for async I/O'
