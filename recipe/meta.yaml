@@ -1,19 +1,16 @@
-{% set version = "0.3.111" %}
+{% set version = "0.3.112" %}
 
 package:
   name: libaio
   version: {{ version }}
 
 source:
-  url: https://pagure.io/libaio/archive/libaio-{{ version }}/libaio-libaio-{{ version }}.tar.gz
+  url: https://releases.pagure.org/libaio/libaio-{{ version }}.tar.gz
   sha256: 1e7c9f70fb1dacd685affa1989fed44519f6b60b5d7b73d70960f5d9e88a3a99
 
 build:
-  number: 1
+  number: 0
   skip: true  # [not linux]
-  script:
-    - make prefix={{ PREFIX }}
-    - make install prefix={{ PREFIX }}
   run_exports:
     - {{ pin_subpackage('libaio', max_pin='x.x') }}
 
