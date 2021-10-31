@@ -9,7 +9,7 @@ source:
   sha256: ab0462f2c9d546683e5147b1ce9c195fe95d07fac5bf362f6c01637955c3b492
 
 build:
-  number: 0
+  number: 1
   skip: true  # [not linux]
   run_exports:
     - {{ pin_subpackage('libaio', max_pin='x.x') }}
