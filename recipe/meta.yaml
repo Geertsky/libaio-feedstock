@@ -17,8 +17,10 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}
+    - sysroot_linux-64
     - make
-
+  host:
+    - sysroot_linux-64
 test:
   commands:
     - test -f $PREFIX/lib/libaio${SHLIB_EXT}
